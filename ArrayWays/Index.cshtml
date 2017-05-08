@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section Scripts
+    {
+    <script src="~/Scripts/main.js" type="text/javascript"></script>        
+    }
+<h1>Number 1</h1>
+<div id="container"></div>
+
+<br />
+
+<h1>Number 2</h1>
+
+    <label for="paramLength">Max Length</label>
+        <input id="paramLength" type="number" onkeyup="generate();"/>
+
+    <br />
+    <label for="paramMultiple1">1st Multiple</label>
+        <input id="paramMultiple1" type="number" onkeyup="generate();"/>
+
+    <br />
+    <label for="paramMultiple2">2nd Multiple</label>
+        <input id="paramMultiple2" type="number" onkeyup="generate();"/>
+
+    <br />
+
+<div id="container2"></div>

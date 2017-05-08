@@ -1,0 +1,29 @@
+﻿@model ImportExcelToTableMVC.Models.Users
+
+@{
+    ViewBag.Title = "DisplayData";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DisplayData</h2>
+
+
+<table>
+
+
+    @foreach (var item in ViewBag.ListUsers)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Title</td>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+
+
+        </tr>
+        @*<ul>
+                <li>@item.FirstName</li>
+                <li>@item.LastName</li>
+            </ul>*@
+    }
+</table>
